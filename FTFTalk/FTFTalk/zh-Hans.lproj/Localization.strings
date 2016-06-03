@@ -1,0 +1,47 @@
+/*
+ Localization.strings
+ */
+
+/**************************通用******************************************/
+"common_prompt" = "提示1";
+"common_confirm" = "确认";
+"common_cancel" = "取消";
+"common_edit" = "编辑";
+"common_save" = "保存";
+"common_delete" = "删除";
+"common_send" = "发送";
+"common_album" = "相册";
+"common_photo" = "拍照";
+"common_setting" = "设置";
+"common_more" = "更多";
+"common_no_webcam" = "没有摄像头";
+"common_cannot_get_a_picture" = "不能从相册获取图片";
+"common_sunday" = "周日";
+"common_monday" = "周一";
+"common_tuesday" = "周二";
+"common_wednesday" = "周三";
+"common_thursday" = "周四";
+"common_friday" = "周五";
+"common_saturday" = "周六";
+"common_no_net_prompt" = "当前网络不可用，请检查您的网络设置";
+"common_create" = "新建";
+"common_add" = "添加";
+"menu_copy" = "复制";
+"menu_delete" = "删除";
+"menu_comment" = "评论";
+"menu_forward" = "转发";
+"data_insert_fail" = "数据库插入失败";
+
+
+"pull_to_refresh"="下拉可以刷新";
+"release_to_refresh"="松开立即刷新";
+"pull_to_loading"="正在刷新数据中...";
+
+/**************************定位******************************************/
+"location_on" = "立即开启";
+"location_open" = "开启定位服务";
+"location_fail" = "获取位置失败";
+"location_access_denied" = "定位设置未开启，请进入系统设置中为%@开启定位服务";
+"location_error_network" = "用于检索位置的网络不可用";
+
+/********************************************************************/

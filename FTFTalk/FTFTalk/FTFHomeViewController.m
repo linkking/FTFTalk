@@ -7,6 +7,7 @@
 //
 
 #import "FTFHomeViewController.h"
+#import "UtilsMacro.h"
 
 @implementation FTFHomeViewController
 
@@ -14,7 +15,7 @@
 -(void)viewDidLoad
 {
     [super viewDidLoad];
-    self.title = @"head";
+    self.title = tr(@"common_prompt");
 }
 
 @end
