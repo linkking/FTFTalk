@@ -14,6 +14,10 @@
 		7C54CE1E1CD1D40D005975C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C54CE1D1CD1D40D005975C4 /* Assets.xcassets */; };
 		7C54CE211CD1D40D005975C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C54CE1F1CD1D40D005975C4 /* LaunchScreen.storyboard */; };
 		7C57F2F11CEC3BE100707D38 /* FTFHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C57F2F01CEC3BE100707D38 /* FTFHomeViewController.m */; };
+		7C7504741D06AFDB00A0B652 /* FTFTagCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C7504731D06AFDB00A0B652 /* FTFTagCollectionViewFlowLayout.m */; };
+		7C7504771D06B1A200A0B652 /* FTFTagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C7504761D06B1A200A0B652 /* FTFTagCell.m */; };
+		7C75047A1D06B21000A0B652 /* FTFTagListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C7504791D06B21000A0B652 /* FTFTagListView.m */; };
+		7C75047F1D06BEA200A0B652 /* ThirdPartService.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C75047E1D06BEA200A0B652 /* ThirdPartService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +33,14 @@
 		7C57F2EF1CEC3BE100707D38 /* FTFHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTFHomeViewController.h; sourceTree = "<group>"; };
 		7C57F2F01CEC3BE100707D38 /* FTFHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTFHomeViewController.m; sourceTree = "<group>"; };
 		7C57F2F31CEC41B900707D38 /* UtilsMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UtilsMacro.h; sourceTree = "<group>"; };
+		7C7504721D06AFDB00A0B652 /* FTFTagCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTFTagCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		7C7504731D06AFDB00A0B652 /* FTFTagCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTFTagCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		7C7504751D06B1A200A0B652 /* FTFTagCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTFTagCell.h; sourceTree = "<group>"; };
+		7C7504761D06B1A200A0B652 /* FTFTagCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTFTagCell.m; sourceTree = "<group>"; };
+		7C7504781D06B21000A0B652 /* FTFTagListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTFTagListView.h; sourceTree = "<group>"; };
+		7C7504791D06B21000A0B652 /* FTFTagListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTFTagListView.m; sourceTree = "<group>"; };
+		7C75047D1D06BEA200A0B652 /* ThirdPartService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdPartService.h; sourceTree = "<group>"; };
+		7C75047E1D06BEA200A0B652 /* ThirdPartService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdPartService.m; sourceTree = "<group>"; };
 		8C3BEEA211E4614E11E274B6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		AE39DFEAED743DAF80D2ACC0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6F5B8BDA982EA77148382D3 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -77,6 +89,7 @@
 			children = (
 				7C57F2F21CEC416000707D38 /* Utils */,
 				7C57F2ED1CEC18C700707D38 /* Modules */,
+				7C75047C1D06BE8600A0B652 /* Vendors */,
 				7C57F2EE1CEC18C700707D38 /* Resources */,
 				7C54CE111CD1D40D005975C4 /* Supporting Files */,
 				7C57F2EF1CEC3BE100707D38 /* FTFHomeViewController.h */,
@@ -102,6 +115,10 @@
 		7C57F2ED1CEC18C700707D38 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				7C75046E1D06AF7000A0B652 /* FTFHome */,
+				7C75046F1D06AF7000A0B652 /* FTFMessage */,
+				7C7504701D06AF7000A0B652 /* FTFMySelf */,
+				7C7504711D06AF7000A0B652 /* Utils */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -119,6 +136,50 @@
 				7C57F2F31CEC41B900707D38 /* UtilsMacro.h */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		7C75046E1D06AF7000A0B652 /* FTFHome */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FTFHome;
+			sourceTree = "<group>";
+		};
+		7C75046F1D06AF7000A0B652 /* FTFMessage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FTFMessage;
+			sourceTree = "<group>";
+		};
+		7C7504701D06AF7000A0B652 /* FTFMySelf */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FTFMySelf;
+			sourceTree = "<group>";
+		};
+		7C7504711D06AF7000A0B652 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				7C7504721D06AFDB00A0B652 /* FTFTagCollectionViewFlowLayout.h */,
+				7C7504731D06AFDB00A0B652 /* FTFTagCollectionViewFlowLayout.m */,
+				7C7504751D06B1A200A0B652 /* FTFTagCell.h */,
+				7C7504761D06B1A200A0B652 /* FTFTagCell.m */,
+				7C7504781D06B21000A0B652 /* FTFTagListView.h */,
+				7C7504791D06B21000A0B652 /* FTFTagListView.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		7C75047C1D06BE8600A0B652 /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				7C75047D1D06BEA200A0B652 /* ThirdPartService.h */,
+				7C75047E1D06BEA200A0B652 /* ThirdPartService.m */,
+			);
+			name = Vendors;
+			path = Modules/Vendors;
 			sourceTree = "<group>";
 		};
 		DF1CF95AA0B662FA275CA079 /* Pods */ = {
@@ -252,9 +313,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C7504741D06AFDB00A0B652 /* FTFTagCollectionViewFlowLayout.m in Sources */,
 				7C54CE161CD1D40D005975C4 /* AppDelegate.m in Sources */,
+				7C75047A1D06B21000A0B652 /* FTFTagListView.m in Sources */,
 				7C54CE131CD1D40D005975C4 /* main.m in Sources */,
 				7C57F2F11CEC3BE100707D38 /* FTFHomeViewController.m in Sources */,
+				7C75047F1D06BEA200A0B652 /* ThirdPartService.m in Sources */,
+				7C7504771D06B1A200A0B652 /* FTFTagCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,6 +432,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FTFTalk/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.oradt.FTFTalk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -379,6 +445,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FTFTalk/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.oradt.FTFTalk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
