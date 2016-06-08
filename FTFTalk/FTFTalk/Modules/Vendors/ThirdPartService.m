@@ -7,10 +7,7 @@
 //
 
 #import "ThirdPartService.h"
-#import "AFNetworkActivityIndicatorManager.h"
-#import "AFNetworkReachabilityManager.h"
 #import "SDWebImageManager.h"
-
 @implementation ThirdPartService
 
 +(void)load
@@ -27,6 +24,15 @@
         [[[SDWebImageManager sharedManager] imageDownloader]
          setValue:@"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"
          forHTTPHeaderField:@"Accept"];
+
+        setenv("XcodeColors", "YES", 1);
+        [DDLog addLogger:[DDTTYLogger sharedInstance]];
+        [[DDTTYLogger sharedInstance] setColorsEnabled:YES];  // 启用颜色区分
+
+        DDLogError(@"错误信息"); // 红色
+        DDLogWarn(@"警告"); // 橙色
+        DDLogInfo(@"提示信息"); // 默认是黑色
+        DDLogVerbose(@"详细信息"); // 默认是黑色
     });
 }
 

@@ -41,6 +41,7 @@
 		7C7504791D06B21000A0B652 /* FTFTagListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTFTagListView.m; sourceTree = "<group>"; };
 		7C75047D1D06BEA200A0B652 /* ThirdPartService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdPartService.h; sourceTree = "<group>"; };
 		7C75047E1D06BEA200A0B652 /* ThirdPartService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdPartService.m; sourceTree = "<group>"; };
+		7C7504821D070B9000A0B652 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		8C3BEEA211E4614E11E274B6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		AE39DFEAED743DAF80D2ACC0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6F5B8BDA982EA77148382D3 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -92,6 +93,8 @@
 				7C75047C1D06BE8600A0B652 /* Vendors */,
 				7C57F2EE1CEC18C700707D38 /* Resources */,
 				7C54CE111CD1D40D005975C4 /* Supporting Files */,
+				7C54CE141CD1D40D005975C4 /* AppDelegate.h */,
+				7C54CE151CD1D40D005975C4 /* AppDelegate.m */,
 				7C57F2EF1CEC3BE100707D38 /* FTFHomeViewController.h */,
 				7C57F2F01CEC3BE100707D38 /* FTFHomeViewController.m */,
 			);
@@ -102,12 +105,11 @@
 			isa = PBXGroup;
 			children = (
 				7C0BA6D01D01649500910E80 /* Localization.strings */,
-				7C54CE141CD1D40D005975C4 /* AppDelegate.h */,
-				7C54CE151CD1D40D005975C4 /* AppDelegate.m */,
 				7C54CE1D1CD1D40D005975C4 /* Assets.xcassets */,
 				7C54CE1F1CD1D40D005975C4 /* LaunchScreen.storyboard */,
 				7C54CE221CD1D40D005975C4 /* Info.plist */,
 				7C54CE121CD1D40D005975C4 /* main.m */,
+				7C7504821D070B9000A0B652 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -431,11 +433,15 @@
 			baseConfigurationReference = D6F5B8BDA982EA77148382D3 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREFIX_HEADER = FTFTalk/PrefixHeader.pch;
 				INFOPLIST_FILE = FTFTalk/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.oradt.FTFTalk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -444,11 +450,15 @@
 			baseConfigurationReference = 8C3BEEA211E4614E11E274B6 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREFIX_HEADER = FTFTalk/PrefixHeader.pch;
 				INFOPLIST_FILE = FTFTalk/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.oradt.FTFTalk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

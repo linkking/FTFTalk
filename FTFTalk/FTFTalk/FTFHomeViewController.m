@@ -7,7 +7,6 @@
 //
 
 #import "FTFHomeViewController.h"
-#import "UtilsMacro.h"
 #import "FTFTagListView.h"
 
 @interface FTFHomeViewController()
@@ -30,8 +29,8 @@
     [self.tagListView.tags addObjectsFromArray: @[@"有英语教学经验",@"生活",@"旅行",@"骑行",@"会中文"]];
     [self.view addSubview:self.tagListView];
     [self.tagListView setCompletionBlockWithSelected:^(NSInteger index) {
-        NSLog(@"____%ld____",index);
-        NSLog(@"%@",_self.tagListView.selectedTags);
+        DDLogInfo(@"%@.m: line :%d  Info: %ld",NSStringFromClass([_self class]), __LINE__,(long)index);
+        DDLogInfo(@"%@",_self.tagListView.selectedTags);
     }];
     
     

@@ -132,4 +132,22 @@ return _instance;                                   \
 #define kTempSubDirectory(dir) ([NSTemporaryDirectory() stringByAppendingPathComponent:dir])
 
 
+//自定义日志
+#ifndef FTFDDLogError
+#define FTFDDLogError(format, ...) \
+{ \
+    DDLogError((@”%@.m:%d Err:” format), NSStringFromClass([self class]), LINE, ## VA_ARGS); \
+}
+#endif
+
+#ifndef FTFDDLogInfo
+#define FTFDDLogInfo(format, ...) \
+{ \
+    DDLogInfo((“%@.m: line :%d  Info:”), NSStringFromClass([self class]), __LINE__); \
+}
+#endif
+
 #endif /* UtilsMacro_h */
+
+
+
