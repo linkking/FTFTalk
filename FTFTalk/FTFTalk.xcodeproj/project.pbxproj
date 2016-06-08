@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		58290EF0B3B348182459C171 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE39DFEAED743DAF80D2ACC0 /* libPods.a */; };
 		7C0BA6D21D01649500910E80 /* Localization.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7C0BA6D01D01649500910E80 /* Localization.strings */; };
+		7C1437541D07BCB70013CE06 /* FTFLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C1437531D07BCB70013CE06 /* FTFLogFormatter.m */; };
 		7C54CE131CD1D40D005975C4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C54CE121CD1D40D005975C4 /* main.m */; };
 		7C54CE161CD1D40D005975C4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C54CE151CD1D40D005975C4 /* AppDelegate.m */; };
 		7C54CE1E1CD1D40D005975C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C54CE1D1CD1D40D005975C4 /* Assets.xcassets */; };
@@ -23,6 +24,8 @@
 /* Begin PBXFileReference section */
 		7C0BA6D11D01649500910E80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localization.strings; sourceTree = "<group>"; };
 		7C0BA6D31D01649C00910E80 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localization.strings"; sourceTree = "<group>"; };
+		7C1437521D07BCB70013CE06 /* FTFLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTFLogFormatter.h; sourceTree = "<group>"; };
+		7C1437531D07BCB70013CE06 /* FTFLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTFLogFormatter.m; sourceTree = "<group>"; };
 		7C54CE0E1CD1D40D005975C4 /* FTFTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FTFTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C54CE121CD1D40D005975C4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7C54CE141CD1D40D005975C4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -136,6 +139,8 @@
 			isa = PBXGroup;
 			children = (
 				7C57F2F31CEC41B900707D38 /* UtilsMacro.h */,
+				7C1437521D07BCB70013CE06 /* FTFLogFormatter.h */,
+				7C1437531D07BCB70013CE06 /* FTFLogFormatter.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -317,6 +322,7 @@
 			files = (
 				7C7504741D06AFDB00A0B652 /* FTFTagCollectionViewFlowLayout.m in Sources */,
 				7C54CE161CD1D40D005975C4 /* AppDelegate.m in Sources */,
+				7C1437541D07BCB70013CE06 /* FTFLogFormatter.m in Sources */,
 				7C75047A1D06B21000A0B652 /* FTFTagListView.m in Sources */,
 				7C54CE131CD1D40D005975C4 /* main.m in Sources */,
 				7C57F2F11CEC3BE100707D38 /* FTFHomeViewController.m in Sources */,
