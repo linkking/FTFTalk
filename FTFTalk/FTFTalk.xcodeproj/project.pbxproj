@@ -10,6 +10,10 @@
 		58290EF0B3B348182459C171 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE39DFEAED743DAF80D2ACC0 /* libPods.a */; };
 		7C0BA6D21D01649500910E80 /* Localization.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7C0BA6D01D01649500910E80 /* Localization.strings */; };
 		7C1437541D07BCB70013CE06 /* FTFLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C1437531D07BCB70013CE06 /* FTFLogFormatter.m */; };
+		7C1437591D080B660013CE06 /* FTFTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C1437581D080B660013CE06 /* FTFTabBarViewController.m */; };
+		7C14375C1D080C6A0013CE06 /* FTFMessageHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C14375B1D080C6A0013CE06 /* FTFMessageHomeViewController.m */; };
+		7C14375F1D080CB70013CE06 /* FTFMySelfHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C14375E1D080CB70013CE06 /* FTFMySelfHomeViewController.m */; };
+		7C1437621D080D6F0013CE06 /* FTFFindTeachersHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C1437611D080D6F0013CE06 /* FTFFindTeachersHomeViewController.m */; };
 		7C54CE131CD1D40D005975C4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C54CE121CD1D40D005975C4 /* main.m */; };
 		7C54CE161CD1D40D005975C4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C54CE151CD1D40D005975C4 /* AppDelegate.m */; };
 		7C54CE1E1CD1D40D005975C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C54CE1D1CD1D40D005975C4 /* Assets.xcassets */; };
@@ -26,6 +30,14 @@
 		7C0BA6D31D01649C00910E80 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localization.strings"; sourceTree = "<group>"; };
 		7C1437521D07BCB70013CE06 /* FTFLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTFLogFormatter.h; sourceTree = "<group>"; };
 		7C1437531D07BCB70013CE06 /* FTFLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTFLogFormatter.m; sourceTree = "<group>"; };
+		7C1437571D080B660013CE06 /* FTFTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTFTabBarViewController.h; sourceTree = "<group>"; };
+		7C1437581D080B660013CE06 /* FTFTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTFTabBarViewController.m; sourceTree = "<group>"; };
+		7C14375A1D080C6A0013CE06 /* FTFMessageHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FTFMessageHomeViewController.h; path = ../../FTFMessageHomeViewController.h; sourceTree = "<group>"; };
+		7C14375B1D080C6A0013CE06 /* FTFMessageHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FTFMessageHomeViewController.m; path = ../../FTFMessageHomeViewController.m; sourceTree = "<group>"; };
+		7C14375D1D080CB70013CE06 /* FTFMySelfHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FTFMySelfHomeViewController.h; path = ../../FTFMySelfHomeViewController.h; sourceTree = "<group>"; };
+		7C14375E1D080CB70013CE06 /* FTFMySelfHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FTFMySelfHomeViewController.m; path = ../../FTFMySelfHomeViewController.m; sourceTree = "<group>"; };
+		7C1437601D080D6F0013CE06 /* FTFFindTeachersHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FTFFindTeachersHomeViewController.h; path = ../../FTFFindTeachersHomeViewController.h; sourceTree = "<group>"; };
+		7C1437611D080D6F0013CE06 /* FTFFindTeachersHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FTFFindTeachersHomeViewController.m; path = ../../FTFFindTeachersHomeViewController.m; sourceTree = "<group>"; };
 		7C54CE0E1CD1D40D005975C4 /* FTFTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FTFTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C54CE121CD1D40D005975C4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7C54CE141CD1D40D005975C4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -98,8 +110,8 @@
 				7C54CE111CD1D40D005975C4 /* Supporting Files */,
 				7C54CE141CD1D40D005975C4 /* AppDelegate.h */,
 				7C54CE151CD1D40D005975C4 /* AppDelegate.m */,
-				7C57F2EF1CEC3BE100707D38 /* FTFHomeViewController.h */,
-				7C57F2F01CEC3BE100707D38 /* FTFHomeViewController.m */,
+				7C1437571D080B660013CE06 /* FTFTabBarViewController.h */,
+				7C1437581D080B660013CE06 /* FTFTabBarViewController.m */,
 			);
 			path = FTFTalk;
 			sourceTree = "<group>";
@@ -113,6 +125,8 @@
 				7C54CE221CD1D40D005975C4 /* Info.plist */,
 				7C54CE121CD1D40D005975C4 /* main.m */,
 				7C7504821D070B9000A0B652 /* PrefixHeader.pch */,
+				7C57F2EF1CEC3BE100707D38 /* FTFHomeViewController.h */,
+				7C57F2F01CEC3BE100707D38 /* FTFHomeViewController.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -148,6 +162,8 @@
 		7C75046E1D06AF7000A0B652 /* FTFHome */ = {
 			isa = PBXGroup;
 			children = (
+				7C1437601D080D6F0013CE06 /* FTFFindTeachersHomeViewController.h */,
+				7C1437611D080D6F0013CE06 /* FTFFindTeachersHomeViewController.m */,
 			);
 			path = FTFHome;
 			sourceTree = "<group>";
@@ -155,6 +171,8 @@
 		7C75046F1D06AF7000A0B652 /* FTFMessage */ = {
 			isa = PBXGroup;
 			children = (
+				7C14375A1D080C6A0013CE06 /* FTFMessageHomeViewController.h */,
+				7C14375B1D080C6A0013CE06 /* FTFMessageHomeViewController.m */,
 			);
 			path = FTFMessage;
 			sourceTree = "<group>";
@@ -162,6 +180,8 @@
 		7C7504701D06AF7000A0B652 /* FTFMySelf */ = {
 			isa = PBXGroup;
 			children = (
+				7C14375D1D080CB70013CE06 /* FTFMySelfHomeViewController.h */,
+				7C14375E1D080CB70013CE06 /* FTFMySelfHomeViewController.m */,
 			);
 			path = FTFMySelf;
 			sourceTree = "<group>";
@@ -322,11 +342,15 @@
 			files = (
 				7C7504741D06AFDB00A0B652 /* FTFTagCollectionViewFlowLayout.m in Sources */,
 				7C54CE161CD1D40D005975C4 /* AppDelegate.m in Sources */,
+				7C14375C1D080C6A0013CE06 /* FTFMessageHomeViewController.m in Sources */,
 				7C1437541D07BCB70013CE06 /* FTFLogFormatter.m in Sources */,
+				7C1437591D080B660013CE06 /* FTFTabBarViewController.m in Sources */,
 				7C75047A1D06B21000A0B652 /* FTFTagListView.m in Sources */,
 				7C54CE131CD1D40D005975C4 /* main.m in Sources */,
+				7C14375F1D080CB70013CE06 /* FTFMySelfHomeViewController.m in Sources */,
 				7C57F2F11CEC3BE100707D38 /* FTFHomeViewController.m in Sources */,
 				7C75047F1D06BEA200A0B652 /* ThirdPartService.m in Sources */,
+				7C1437621D080D6F0013CE06 /* FTFFindTeachersHomeViewController.m in Sources */,
 				7C7504771D06B1A200A0B652 /* FTFTagCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

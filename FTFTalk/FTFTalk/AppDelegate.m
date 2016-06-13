@@ -7,54 +7,48 @@
 //
 
 #import "AppDelegate.h"
+#import "FTFFindTeachersHomeViewController.h"
 #import "FTFHomeViewController.h"
+#import "FTFMessageHomeViewController.h"
+#import "FTFMySelfHomeViewController.h"
+#import "FTFTabBarViewController.h"
 #import "ThirdPartService.h"
-
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
-    self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen] bounds]];
+
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
     [self enterHomeVC];
     [self.window makeKeyAndVisible];
-    
+
     return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
-
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
-
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
-
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
-
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {
-
 }
-
 
 #pragma mark -  private method
 
--(void)enterHomeVC
-{
-    UIViewController *homeVC = [[FTFHomeViewController alloc]init];
-    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:homeVC];
-    self.window.rootViewController = nav;
+- (void)enterHomeVC {
+    FTFTabBarViewController *tabBarController = [[FTFTabBarViewController alloc] init];
+    self.window.rootViewController = tabBarController;
 }
 
 @end

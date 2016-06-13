@@ -19,7 +19,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    __weak typeof(self) _self = self;
     self.title = tr(@"common_prompt");
     self.tagListView = [[FTFTagListView alloc]
         initWithFrame:CGRectMake(0, 0, kScreen_Width, 200)];
@@ -34,9 +33,11 @@
         @"会中文"
     ]];
     [self.view addSubview:self.tagListView];
+    @weakify(self);
     [self.tagListView setCompletionBlockWithSelected:^(NSInteger index) {
+        @strongify(self);
         DDLogInfo(@"%ld", (long) index);
-        DDLogInfo(@"%@", _self.tagListView.selectedTags);
+        DDLogInfo(@"%@", self.tagListView.selectedTags);
     }];
 }
 
